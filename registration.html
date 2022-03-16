@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+        .fields{
+          text-align: center;
+           }
+       .label{
+           margin-top: .2in;
+       }
+       .container{
+        background-color: aqua;
+        padding-top: 2in;
+        padding-bottom: 2in;
+        border: 5px;
+        border-style: solid;
+        box-shadow: black;
+       }
+       #register{
+           padding-left: 10px;
+           padding-right: 10px;
+           padding-top: 5px;
+           padding-bottom: 5px;
+       }
+       
+    </style>
+    
+</head>
+<body>
+ 
+  <form action="/myaction.php" name="myForm"  method="post">
+    <div class="container" >
+        <h2 style="text-align: center;">Registration Form</h2>
+        <div class="fields">
+          <div>
+            <label for="Firstname" >First Name: </label>
+            <input type="text" id="fname" value="Enter FirstName" >
+          </div>    
+          <div class="label"> 
+             <label for="Lastname" >Last Name: </label>
+             <input type="text" id="lname" value="Enter LastName">
+          </div>
+          <div class="label">
+            <label for="email" >Email Add.: </label>
+            <input type="email" name="email" id="Email" value="Enter Email Address">
+          </div>
+          <div class="label">
+            <label for="password">Password: </label>
+            <input type="password" id="password" value="Enter Password">
+          </div> 
+          <div class="label">
+            <label for="password"> Confirm Password: </label>
+            <input type="password" id="cnfmpassword" value="Confirm Password">
+          </div> 
+          <div class="label">
+            <input type="button" value="Register" id="register">
+          </div>
+            
+        </div>
+    </div>
+
+  </form>
+
+
+
+
+</body>
+</html>
+
